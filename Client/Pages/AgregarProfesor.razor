@@ -1,0 +1,43 @@
+@page "/profesor/agregar"
+@using EvaluacionDocente.Shared.Models;
+@inject HttpClient httpClient
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Profesores</PageTitle>
+
+<h1>Agrega un profesor</h1>
+
+<form>
+    <div class="form-group mb-2">
+        <label>Nombre*</label>
+        <input type="text" class="form-control" @bind="@profesor.Nombre" required>
+    </div>
+
+    <div class="form-group mb-2">
+        <label>Materia*</label>
+        <input type="text" class="form-control" @bind="@profesor.Materia" required>
+    </div>
+
+    <div class="form-group mb-2">
+        <label>Escuela*</label>
+        <input type="text" class="form-control" @bind="@profesor.Escuela" required>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>URL de imagen</label>
+        <input type="text" class="form-control" @bind="@profesor.Imagen">
+    </div>
+
+    <button type="submit" class="btn btn-primary" @onclick="@Agregar">Agregar</button>
+</form>
+
+@code {
+    Profesor profesor = new Profesor();
+
+    private async Task Agregar()
+    {
+        await httpClient.PostAsJsonAsync("/api/profesor", profesor);
+        NavigationManager.NavigateTo("/profesor", forceLoad: true);
+    }
+}

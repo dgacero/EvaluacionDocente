@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gaHNRLQFtfFjqftVaBjN+h7g0UVKj7GDubrM8kyOfNFG2nCxwccYPiiqaTZr0DzXqlC+cGd1A51YoiBCBcXODg==",
+  "success": true,
+  "projectFilePath": "/home/voyager/EvaluacionDocente/Shared/EvaluacionDocente.Shared.csproj",
+  "expectedPackageFiles": [
+    "/home/voyager/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.5/microsoft.aspnetcore.app.ref.7.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,56 @@
+@page "/evaluacion"
+@using EvaluacionDocente.Shared.Models;
+@inject HttpClient httpClient
+@inject NavigationManager NavigationManager
+
+<PageTitle>Evaluaciones</PageTitle>
+
+<h1>Lista de evaluaciones</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var evaluacion in listaEvaluaciones)
+        {
+            var profesor = listaProfesores.FirstOrDefault(p => p.Id == evaluacion.ProfesorId);
+            var calificacion = Math.Clamp(@evaluacion.Calificacion, 0, 10);
+
+            <div class="col-auto mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@profesor.Nombre</h5>
+                        <p class="card-text">
+                            <br>
+                            <b>Calificación:</b> @calificacion/10
+                            <br>
+                            <b>Comentarios:</b> @evaluacion.Comentarios
+                        </p>
+                        
+                        <button type="button" class="btn btn-primary" @onclick="() => Eliminar(evaluacion.Id)">
+                            Eliminar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<a class="btn btn-primary" href="/evaluacion/publicar">Publicar evaluación</a>
+
+@code {
+    Evaluacion evaluacion = new Evaluacion();
+    List<Profesor> listaProfesores = new List<Profesor>();
+    List<Evaluacion> listaEvaluaciones = new List<Evaluacion>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaProfesores = await httpClient.GetFromJsonAsync<List<Profesor>>("/api/profesor");
+        listaEvaluaciones = await httpClient.GetFromJsonAsync<List<Evaluacion>>("/api/evaluacion");
+    }
+
+    private async Task Eliminar(int id)
+    {
+        await httpClient.DeleteAsync($"/api/evaluacion/{id}");
+        NavigationManager.NavigateTo("/evaluacion", forceLoad: true);
+    }
+}

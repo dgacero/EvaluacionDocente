@@ -1,0 +1,57 @@
+@page "/profesor"
+@using EvaluacionDocente.Shared.Models;
+@inject HttpClient httpClient
+@inject NavigationManager NavigationManager
+
+<PageTitle>Profesores</PageTitle>
+
+<style>
+    .form-group {
+        margin-bottom: 10px;
+    }
+</style>
+
+<h1>Lista de profesores</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var profesor in listaProfesores)
+        {
+            <div class="col-auto mb-3">
+                <div class="card" style="width: 18rem;">
+                    <img styleclass="card-img-top" src="@profesor.Imagen" alt="Imagen">
+                    <div class="card-body">
+                        <h5 class="card-title">@profesor.Nombre</h5>
+                        <p class="card-text">
+                            <br>
+                            <b>Materia:</b> @profesor.Materia
+                            <br>
+                            <b>Escuela:</b> @profesor.Escuela
+                        </p>
+                        
+                        <button type="button" class="btn btn-primary" @onclick="() => Eliminar(profesor.Id)">
+                            Eliminar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<a class="btn btn-primary" href="/profesor/agregar">Agregar profesor</a>
+
+@code {
+    List<Profesor> listaProfesores = new List<Profesor>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaProfesores = await httpClient.GetFromJsonAsync<List<Profesor>>("/api/profesor");
+    }
+    
+    private async Task Eliminar(int id)
+    {
+        await httpClient.DeleteAsync($"/api/profesor/{id}");
+        NavigationManager.NavigateTo("/profesor", forceLoad: true);
+    }
+}

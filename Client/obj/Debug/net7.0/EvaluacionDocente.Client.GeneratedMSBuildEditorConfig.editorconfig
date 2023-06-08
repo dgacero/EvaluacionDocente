@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = EvaluacionDocente.Client
+build_property.RootNamespace = EvaluacionDocente.Client
+build_property.ProjectDir = /home/voyager/EvaluacionDocente/Client/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/voyager/EvaluacionDocente/Client
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/voyager/EvaluacionDocente/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Pages/AgregarProfesor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWdyZWdhclByb2Zlc29yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Pages/Evaluaciones.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXZhbHVhY2lvbmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Pages/Profesores.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZmVzb3Jlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Pages/PublicarEvaluacion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHVibGljYXJFdmFsdWFjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/voyager/EvaluacionDocente/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-zxp8y8p5pv
+
+[/home/voyager/EvaluacionDocente/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hca7x8n7j3

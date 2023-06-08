@@ -1,0 +1,12 @@
+/home/voyager/EvaluacionDocente/Shared/bin/Debug/net7.0/EvaluacionDocente.Shared.deps.json
+/home/voyager/EvaluacionDocente/Shared/bin/Debug/net7.0/EvaluacionDocente.Shared.dll
+/home/voyager/EvaluacionDocente/Shared/bin/Debug/net7.0/EvaluacionDocente.Shared.pdb
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.csproj.AssemblyReference.cache
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.AssemblyInfoInputs.cache
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.AssemblyInfo.cs
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.csproj.CoreCompileInputs.cache
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.dll
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/refint/EvaluacionDocente.Shared.dll
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/EvaluacionDocente.Shared.pdb
+/home/voyager/EvaluacionDocente/Shared/obj/Debug/net7.0/ref/EvaluacionDocente.Shared.dll
